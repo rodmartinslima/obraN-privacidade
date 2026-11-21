@@ -23,28 +23,41 @@
 <body>
 <main>
 <h1>Política de Privacidade do Obra em Dia</h1>
-<p class="data">Última atualização: 27 de setembro de 2026</p>
+<p class="data">Última atualização: 20 de novembro de 2026</p>
 
 <p class="resumo"><strong>Em resumo:</strong> o Obra em Dia não tem conta de usuário nem servidor próprio. Tudo o que você
 cadastra fica guardado apenas no seu celular. Não coletamos, não vendemos e não compartilhamos seus dados. Quando você
-compartilha uma obra ou guarda um backup, é você quem escolhe para onde o arquivo vai.</p>
+compartilha uma obra ou guarda um backup, é você quem escolhe para onde o arquivo vai. A leitura de comprovantes
+usa um componente do Google que roda no celular e envia apenas dados técnicos de diagnóstico (veja a seção 2).</p>
 
 <p>Esta política explica como o aplicativo Obra em Dia (pacote <code>com.rodrigomartins.obran</code>), desenvolvido por
 Rodrigo Martins, trata as informações de quem o utiliza, em conformidade com a Lei Geral de Proteção de Dados
 (Lei nº 13.709/2018).</p>
 
 <h2>1. Dados que ficam no seu aparelho</h2>
-<p>Obras, etapas, orçamentos, gastos, parcelas, materiais, fotos de notas e recibos, o nome que você der a este aparelho e
+<p>Obras, etapas, orçamentos e propostas recebidas, gastos, parcelas, materiais, profissionais e dias trabalhados,
+garantias, o diário de obra, fotos de notas, recibos e do andamento da obra, o nome que você der a este aparelho e
 as preferências do app são gravados em um banco de dados interno do Obra em Dia, no próprio celular. O desenvolvedor não
 tem acesso a essas informações, e elas não são enviadas para nenhum servidor do Obra em Dia, que não existe.</p>
 <p>Os dados permanecem no aparelho até que você os exclua no app, limpe os dados do aplicativo nas configurações do
 Android ou desinstale o app. Não há cópia automática em nuvem: guarde um backup antes de trocar de celular.</p>
+<p>Se você colocar o widget do Obra em Dia na tela inicial, ele mostra o nome e o saldo de uma obra ali, à vista de quem
+estiver com o celular desbloqueado. O widget lê os dados do próprio aparelho e não os envia a lugar nenhum.</p>
 
-<h2>2. Câmera e fotos</h2>
-<p>Ao lançar um gasto, você pode anexar a foto da nota ou do recibo, tirando uma foto na hora ou escolhendo uma imagem da
+<h2>2. Câmera, fotos e comprovantes</h2>
+<p>Ao lançar um gasto, um orçamento ou um registro do diário, você pode anexar uma foto, tirando uma foto na hora ou escolhendo uma imagem da
 galeria. A câmera só é aberta quando você toca nessa opção, e da galeria o app recebe apenas a imagem que você escolher.
 A foto é reduzida e copiada para a área interna do app, sem ser enviada a lugar nenhum.</p>
 <p>As duas permissões são opcionais: sem elas, você continua lançando gastos normalmente, apenas sem a foto.</p>
+<p>Você também pode compartilhar com o Obra em Dia um comprovante de Pix, uma nota ou um recibo (imagem ou PDF) a partir
+de outro app, como o do seu banco. O app só recebe o arquivo que você escolheu compartilhar.</p>
+<p><strong>Leitura do comprovante.</strong> Para preencher o gasto sozinho, o Obra em Dia lê o texto da foto ou do
+comprovante (valor, data e favorecido) com o <strong>ML Kit</strong>, um componente do Google que funciona no próprio
+celular, por meio do Google Play Services. A imagem e o texto lido não saem do aparelho. Na primeira leitura, o Google
+Play Services pode baixar o modelo de reconhecimento de texto. O ML Kit envia ao Google dados técnicos de
+diagnóstico, que não incluem a imagem nem o texto lido: modelo do aparelho, versão do Android e do app, tempo e tamanho
+da leitura e códigos de erro. Esses dados são criptografados no envio e, segundo o Google, não são repassados a
+terceiros. O que foi lido apenas preenche o formulário, para você conferir antes de salvar.</p>
 
 <h2>3. Microfone e reconhecimento de voz</h2>
 <p>Na tela de lançamento existe a opção de lançar o gasto falando. Ao tocar no microfone, o Android pede a permissão e o
@@ -77,6 +90,7 @@ de quem recebe. Ao importar um arquivo de outra pessoa, os dados dele são mescl
 <table>
   <tr><th>Serviço</th><th>Quando é usado</th><th>O que recebe</th></tr>
   <tr><td>Serviço de reconhecimento de voz do Android</td><td>Ao lançar um gasto pela voz</td><td>O áudio da frase falada, processado no próprio aparelho quando há pacote de voz em português instalado</td></tr>
+  <tr><td>ML Kit (Google), pelo Google Play Services</td><td>Ao ler o texto de uma foto ou de um comprovante compartilhado</td><td>Nada da imagem nem do texto lido, que ficam no aparelho; apenas dados técnicos de diagnóstico: modelo do aparelho, versão do Android e do app, tempo e tamanho da leitura e códigos de erro</td></tr>
   <tr><td>Google Play</td><td>Ao comprar ou restaurar o Obra em Dia Pro</td><td>A compra é processada pelo Google; o app recebe apenas a confirmação de que o produto foi adquirido</td></tr>
 </table>
 </div>
@@ -86,7 +100,8 @@ de quem recebe. Ao importar um arquivo de outra pessoa, os dados dele são mescl
 <h2>6. O que o Obra em Dia não faz</h2>
 <ul>
   <li>Não exige cadastro, login ou e-mail.</li>
-  <li>Não usa ferramentas de análise, rastreamento ou publicidade.</li>
+  <li>Não usa ferramentas de análise, rastreamento ou publicidade. O único envio automático são os dados técnicos de
+  diagnóstico do ML Kit descritos acima, que não identificam o que você leu.</li>
   <li>Não vende nem compartilha seus dados com terceiros para qualquer finalidade.</li>
   <li>Não acessa sua localização, seus contatos ou arquivos além dos que você escolher.</li>
   <li>Não escuta em segundo plano: o microfone só funciona enquanto você usa o botão de voz.</li>
